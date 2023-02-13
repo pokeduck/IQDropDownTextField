@@ -167,11 +167,7 @@ NSInteger const IQOptionalTextFieldIndex =  -1;
         }
 
         if (_dropDownFont) {
-            if (_dropDownFont.pointSize < 30) {
-                labelText.font = [_dropDownFont fontWithSize:30];
-            } else {
-                labelText.font = _dropDownFont;
-            }
+            labelText.font = _dropDownFont;
         } else {
             labelText.font = [UIFont boldSystemFontOfSize:30.0];
         }
